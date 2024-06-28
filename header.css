@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(234, 210, 182);
+    margin: 0;
+    padding:0.1px;
+    justify-content: space-between;
+    background-position: center;
+    align-items: center;
+    width:100%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    margin-left: 50px;
+}
+nav ul li{
+    display: inline-block;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 70px;
+    text-align: center; 
+}
+nav ul li a {
+    color: white;
+    background-color: #f5b903a8;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration:none;
+    width: 80px;
+    display:inline-block;
+    justify-content: center;
+    
+}
+nav ul li a:hover{
+    color: rgb(249, 131, 14);
+    background-color: white;
+}
+nav ul li a.current{
+    background-color:rgba(223, 114, 114, 0.3)
+}
+/* For screens up to 768 pixels wide (e.g., phones) */
+@media (max-width: 768px) {
+    /* Add your responsive CSS here */
+    header {
+      /* Example styles for smaller screens */
+      padding: 5px;
+    }
+    
+    nav ul li {
+      /* Example styles for smaller screens */
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    /* Add more styles for other elements as needed */
+  }
+

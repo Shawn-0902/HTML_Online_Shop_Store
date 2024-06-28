@@ -1,0 +1,46 @@
+table{
+    margin: auto;
+    align-items: center;
+}
+td{
+    text-align: center;
+    padding: 30px;
+}
+.Order{
+    font-Size:50px;
+    color: orange;
+    text-decoration: underline;
+}
+.Order:hover{
+    color: rgb(195, 195, 254);
+}
+#Shoe{
+    width: 370px; 
+    height: 289px;
+}
+#Shoestyle{
+    width: 510px;
+    height: 282px;
+}
+#imgSocks{
+    width: 449px; 
+    height: 375px;
+}
+#ShoeWords{
+    font-size: 20px;
+}
+#SocksWords{
+    font-size: 20px;
+}
+body{
+    background-color:rgb(201, 242, 220) ;
+}
+.backtoup{
+    color: white;
+    background-color: #dad8d0;
+    font-size: 30px;
+}
+.backtoup:hover{
+    background-color: rgb(165, 174, 171);
+    
+}

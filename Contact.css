@@ -1,0 +1,28 @@
+.contactName{
+    font-size: 30px;
+}
+.label{
+    font-size: 20px;
+    text-decoration: underline;
+}
+td{
+    text-align: left;
+    padding: 30px;
+}
+table{
+    align-items: center;
+    margin: 20px;
+}
+#email{
+    color: orange;
+}
+#email:hover{
+    color: blue;
+}
+.logo ion-icon{
+    color: rgb(40, 3, 254);
+    font-size: 1.5em;
+}
+body{
+    background-color: rgb(203, 223, 213);
+}

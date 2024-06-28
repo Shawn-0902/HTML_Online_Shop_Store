@@ -1,0 +1,40 @@
+table{
+    margin: auto;
+    align-items: center;
+}
+td{
+    text-align: center;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    color: orange;
+    background-color: rgb(241, 211, 199);
+    font-size: 60px;
+}
+body{
+    background: url('background/background1.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#toproduct{
+    font-size: 50px;
+    color: orange;
+    text-decoration: underline;
+}
+#toproduct:hover{
+    color: rgb(146, 146, 224);
+}
+.Credits{
+    text-align: center;
+    background-color: rgb(192, 207, 207);
+}
+.backtoup{
+    color: white;
+    background-color: #dad8d0;
+    font-size: 30px;
+}
+.backtoup:hover{
+    background-color: rgb(165, 174, 171);
+    
+}

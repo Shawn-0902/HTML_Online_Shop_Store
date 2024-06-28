@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Order.css">
+    <link rel="stylesheet" type="text/css" href="header.css"/>
+    <title>Order Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <a href="Home.html">
+                <img src="background/logo.jpeg" width="170px" alt="Home">
+            </a>
+            <li><a href="Home.html">Home</a></li>  
+            <li><a href="Product.html" >Product</a></li>
+            <li><a href="#"class="current">Order</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form action="Receipt_of_oder.html" method="get" target="_blank">
+            <h1>Choose your items</h1>
+            <p>(Store opening promotion)<br>Shoes: <strong>20%OFF</strong></p> 
+    
+            <fieldset>
+                <legend>Shoe</legend>
+                <div  id="section1" class="section">
+                    <table>
+                        <tr>
+                            <td><strong id="Titel">Choose your Sheoes:</strong>  
+                                <select name="Selected Shoe " id="Shoes">
+                                    <option value=" "> </option>
+                                    <option value="Trendy Skate Black($120.00)">Black Shoe</option>
+                                    <option value="Trendy Skate Brown($115.00)">Brown Shoe</option>
+                                    <option value="Trendy Skate Green($125.00)">Green Shoe</option>
+                                </select>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td id="shoenName">Trendy Skate Black($120.00)</td>
+                            <td id="shoenName">Trendy Skate Brown($115.00) </td>
+                            <td id="shoenName">Trendy Skate Green($125.00) </td>
+                        </tr>
+                        <tr>
+                            <td><img src="Shoe/Black shoe.png" id="shoe"></td>
+                            <td><img src="Shoe/brown shoe.png" id="shoe"></td>
+                            <td><img src="Shoe/Green shoe.png" id="shoe"></td>
+                        </tr>
+                        <tr>
+                            <td><strong id="Titel">Choose your Sheoe Size:</strong>  
+                                <select name="Size of Shoe" id="Size">
+                                    <option value=" "> </option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                </select></td>
+                            <td><strong id="Titel"> Quantity:</strong>
+                            <input type="number" name="Number of Sheo " id="Number of Sheo" value="0" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td><strong style="font-size: 20px;">check:</strong> <p id="ShoePrice" name="ShoePrice"></p></td>
+                            <td></td>
+                            <td><button id="section1" onclick="countShoePrice();TotalAmount();return false;">Check Price</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Socks</legend>
+                <div  id="section2" class="section">
+                    <table>
+                        <tr>
+                            <td><strong id="Titel">Choose your Socks:</strong>  
+                                <select name="Selected Socks" id="scoks">
+                                    <option value=" "> </option>
+                                    <option value="Set 1">Set 1</option>
+                                    <option value="Set 2">Set 2</option>
+                                    <option value="Set 3">Set 3</option>
+                                </select>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td id="shoenName"><strong>Set 1</strong><br>
+                                Basketball white + Sunrise + Three bars + Whale + Rain<br>
+                                <strong>5 pairs $22.00</strong></td>
+                            <td id="shoenName"><strong>Set 2</strong><br>
+                                E + snow mountain + Whale + Sunrise + Basketball white<br>
+                                <strong>5 pairs $20.00</strong></td>
+                            <td id="shoenName"><strong>Set 3</strong><br>
+                                Snow mountain + E + Get + Thunder + NC<br>
+                                <strong>5 pairs $21.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td><img src="socks/socks1.png" id="Socks"></td>
+                            <td><img src="socks/socks2.png" id="Socks"></td>
+                            <td><img src="socks/socks3.png" id="Socks"></td>
+                        </tr>
+                        <tr>
+                            <td><strong id="Titel">Choose your Socks Size:</strong>  
+                                <select name="Size of Socks " id="Size">
+                                    <option value=" "> </option>
+                                    <option value="35-37">35-37</option>
+                                    <option value="38-40">38-40</option>
+                                    <option value="41-43">41-43</option>
+                                    <option value="45">45</option>
+                                </select></td>
+                            <td><strong id="Titel"> Quantity:</strong>
+                            <input type="number" name="Number of Socks "  id="Number of Socks" value="0" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td><strong style="font-size: 20px;">check:</strong> <p id="SocksPrice" name="SocksPrice"></p></td>
+                            <td></td>
+                            <td><button id="section2" onclick="countSocksPrice();TotalAmount();return false;">Check Price</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+            <p>If you have already selected the item, please fill in your personal information, address, and payment method</p>
+            <fieldset>
+                <legend>Personal information</legend>
+                    <div  id="section3" class="section">
+                        <div class="inputbox">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" name="Your Name " placeholder=" "required>
+                            <label for="">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="Email" name="Your Email " placeholder=" "required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <input type="tel" name="Your Contact Number " id="contact" title="8 dights" pattern="[0-9]{8}" placeholder=" " required>
+                            <label for="">Contact Number(+65)</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <input type="text" name="Your Address " id="address1" placeholder=" " required>
+                            <label for="address1">Address</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <input type="text" id="address2" placeholder=" " required>
+                            <label for="address2">Confirm Address</label>
+                        </div>    
+                        <p id="Address"></p>
+                        <h2 id="TotalAmount"></h2>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td><div class="radio" >
+                                    <p>Please select a payment method: </p>
+                                    <input type="radio" name="Payment " id="Payment" value="VISA" required>
+                                    <label for="VISA">VISA</label><br>
+                                    <input type="radio" name="Payment " id="Payment" value="MasterCard">
+                                    <label for="MasterCard">MasterCard</label><br>
+                                    <input type="radio" name="Payment " id="Payment" value="WeChatPay">
+                                    <label for="WeChatPay">WeChatPay</label><br>
+                                    <input type="radio" name="Payment " id="Payment" value="Apple Pay">
+                                    <label for="Apple Pay">Apple Pay</label><br>
+                                    </div></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <input type="checkbox" id="Agreement" name="Agreement" value="Checked" >
+                        <label for="Agreement" >CHECK! if you agree to our <a href="https://help.shopee.com.my/portal/article/77215#:~:text=Shopee%20may%20impose%20a%20fee,to%20change%20at%20Shopee's%20discretion." target="_blank" id="Agreement">Terms and Conditions.</a></label><br>
+                        <td><p id="Agreement"></p></td>
+                    </div>
+                </fieldset>
+            <table>
+                <tr>
+                    <td colspan="3"><button type="submit" id="final" onclick="compareAddress();validateCheckbox();validateRadiobutton();">Place Order</button></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <script src="Order.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
